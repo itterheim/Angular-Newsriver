@@ -13,11 +13,11 @@ export class ArticleComponent implements OnInit {
 
   public ngOnInit() { }
 
-  private hasImage(): boolean {
+  public hasImage(): boolean {
     return Boolean(this.article.elements && this.article.elements.filter(x => x.type === 'Image')[0]);
   }
 
-  private getImage(): string {
+  public getImage(): string {
     if (!this.hasImage()) { return undefined; }
     return this.article.elements.filter(x => x.type === 'Image')[0].url;
   }
