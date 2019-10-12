@@ -1,0 +1,5 @@
+<img src="{{getImage()}}" *ngIf="hasImage()">
+
+{{article.publishDate || article.discoverDate | date:'yyyy-MM-dd hh:mm'}}<br />
+{{article.title}}<br />
+<a href="{{article.url}}">{{article.url}}</a>

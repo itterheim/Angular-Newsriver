@@ -1,0 +1,13 @@
+<div class="search">
+  <input [(ngModel)]="filter.text" placeholder="Search" [class.empty]="!filter.text || !filter.text.length" />
+  <select [(ngModel)]="filter.sortBy">
+    <option value="_score">Score</option>
+    <option value="discoverDate">Time</option>
+    <!-- <option value="metadata.readTime.seconds">Reading time</option> -->
+  </select>
+  <select [(ngModel)]="filter.sortOrder">
+    <option value="DESC">Descending</option>
+    <option value="ASC">Ascending</option>
+  </select>
+  <button type="submit" (click)="submit()">Search</button>
+</div>

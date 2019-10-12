@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  width: 567px;
+  padding: 20px 0;
+
+  div.loader {
+    margin-bottom: 20px;
+    color: #777;
+  }
+
+  div.error {
+    margin-bottom: 20px;
+    color: #d00;
+  }
+}
