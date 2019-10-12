@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "gh-build": "ng build --prod --base-href https://itterheim.github.io/Angular-Newsriver/",
+    "gh-publish": "ngh --dir=dist/newsriver"
   },
   "private": true,
   "dependencies": {
